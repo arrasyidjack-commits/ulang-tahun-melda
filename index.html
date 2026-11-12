@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Melda!</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="confetti"></canvas>
+
+  <!-- Layar 1: Hitung mundur / pembuka -->
+  <section id="intro" class="screen active">
+    <h1>🎂 Hai Melda!</h1>
+    <p>Ada kejutan kecil buat kamu...</p>
+    <button id="openBtn">Buka Kejutan 🎁</button>
+  </section>
+
+  <!-- Layar 2: Kue & ucapan -->
+  <section id="cake-screen" class="screen">
+    <h1 class="title">Selamat Ulang Tahun, Melda! 🎉</h1>
+
+    <div class="cake">
+      <div class="candle"><div class="flame" id="flame"></div></div>
+      <div class="layer layer-top"></div>
+      <div class="layer layer-mid"></div>
+      <div class="layer layer-bottom"></div>
+      <div class="plate"></div>
+    </div>
+
+    <p id="hint">Klik lilinnya untuk meniup 🕯️</p>
+    <p id="typed" class="typed"></p>
+
+    <button id="nextBtn" class="hidden">Lihat Pesan Spesial 💌</button>
+  </section>
+
+  <!-- Layar 3: Kartu ucapan -->
+  <section id="card-screen" class="screen">
+    <div class="card">
+      <h2>Untuk Melda 💖</h2>
+      <p id="message"></p>
+      <button id="partyBtn">Pesta Konfeti! 🎊</button>
+      <button id="replayBtn" class="ghost">Ulangi dari awal</button>
+    </div>
+  </section>
+
+  <audio id="music" loop>
+    <!-- Opsional: taruh file lagu di folder yang sama, lalu aktifkan baris di bawah -->
+    <!-- <source src="happy-birthday.mp3" type="audio/mpeg" /> -->
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
